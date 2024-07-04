@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const path = require("path");
 const cors = require("cors");
 const app = express();
+const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 5000;
 
@@ -15,6 +16,9 @@ app.use(cors());
 const env = process.env.NODE_ENV || "development";
 
 dotenv.config({ path: path.resolve(__dirname, `.env.${env}`) });
+
+// Connect to MongoDB
+connectDB();
 
 app.use("/api/", router);
 
