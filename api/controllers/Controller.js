@@ -1,6 +1,6 @@
 const asyncHandler = require("express-async-handler");
 const { CustomError } = require("../middleware/errorMiddleware");
-const { Service, Appointment, Contact } = require("../models/models");
+const { Service, Appointment, Contact } = require("../Models/index");
 
 // desc POST the contact
 // @routes POST /api/contact
