@@ -1,0 +1,39 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/api/node_modules
+/healthhubui/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+
+# environment files
+.env.*
+/api/.env
+/healthhubui/.env
+/api/.env.local
+/api/.env.development
+/api/.env.test
+/api/.env.production
+/healthhubui/.env.local
+/healthhubui/.env.development
+/healthhubui/.env.test
+/healthhubui/.env.production
+
+
+# misc
+.DS_Store
+.env.local
+.env.development
+api/.env.test
+api/.env.production
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
